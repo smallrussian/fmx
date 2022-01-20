@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+window.onload = function() {
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
+
+////////////////////////////////////// start below this line 
+
+	
+context.beginPath();
+	context.moveTo(100,100);
+	context.lineTo(300,300);
+	context.lineTo(000,300);
+	context.lineTo(100,100);
+	context.lineWidth=15;
+	context.strokeStyle='red';
+	context.stroke();
+	context.fillStyle='blue';
+	context.fill();
+	context.closePath();
+context.beginPath();
+	context.moveTo(400, 100);
+	context.lineTo(700, 300);
+	context.lineTo(400, 300);
+	context.lineTo(400, 100);
+	context.lineWidth=5
+	context.strokeStyle='blue'
+	context.stroke();
+	context.fillStyle='green'
+	context.fill()
+	context.closePath();
+context.beginPath();
+	context.moveTo(200,450);
+	context.lineTo(600,600);
+	context.lineTo(600,400);
+	context.lineTo(200,450);
+	context.lineWidth=10
+	context.strokeStyle='yellow'
+	context.fillStyle='orange'
+	context.fill()
+	context.stroke();
+
+
+
+
+
+////////////////////////////////////// end above this line 
+};
+</script>
+</head>
+<body>
+<canvas id="myCanvas" width="800" height="600"></canvas>
+</body>
+</html>

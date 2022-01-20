@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+window.onload = function() {
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
+
+////////////////////////////////////// start below this line 
+
+context.beginPath();
+	context.moveTo(100, 150);
+	context.lineTo(450,50);
+	context.stroke();
+	context.closePath();
+	
+	
+	
+	
+	
+context.beginPath();
+context.moveTo(100,150);
+context.lineTo(450,50);
+context.lineWidth = 15;		
+context.strokeStyle='rgb(252,3,219)';
+context.stroke();
+context.closePath();
+	
+context.beginPath();
+context.moveTo(100,2000);
+context.lineTo(450,50);
+context.lineWidth = 15;
+context.strokeStyle ='rgb(36,122,85)';	//rgb(r,g,b); each number is between 0-255
+context.stroke();
+context.closePath();
+
+context.beginPath();
+context.moveTo(100,250);
+context.lineTo(450,50);
+context.lineWidth = 15;
+context.lineCap = 'round';			//three options: butt/round/square
+context.strokeStyle = 'rgb(36,122,85)';
+context.stroke();
+context.closePath();
+
+	
+	
+	
+	
+////////////////////////////////////// end above this line 
+};
+</script>
+</head>
+<body>
+<canvas id="myCanvas" width="800" height="600"></canvas>
+</body>
+</html>
+
+
