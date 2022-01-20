@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+window.onload = function() {
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
+
+////////////////////////////////////// start below this line 
+
+context.beginPath();
+context.rect(350,400,200,100);		//(x coordinate, y coordinate, width, height)
+context.strokeStyle='blue'
+context.stroke();
+context.fillStyle='red'
+context.fill()
+context.closePath();
+	
+	
+	
+context.beginPath();
+context.moveTo(400,100);
+context.lineTo(700,500);
+context.lineTo(100,500);
+context.lineTo(400,100);
+context.stroke();
+
+
+////////////////////////////////////// end above this line 
+};
+</script>
+</head>
+<body>
+<canvas id="myCanvas" width="800" height="600"></canvas>
+</body>
+</html>
+
