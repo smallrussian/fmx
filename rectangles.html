@@ -9,10 +9,7 @@ var context = canvas.getContext("2d");
 ////////////////////////////////////// start below this line 
 context.beginPath();
 	context.moveTo(100,100);
-	context.lineTo(100,300);
-	context.lineTo(400,300);
-	context.lineTo(400,100);
-	context.lineTo(100, 100);
+	context.rect(50,100,200,300 )
 	context.lineWidth=5
 	context.strokeStyle='blue'
 	context.stroke();
@@ -20,11 +17,8 @@ context.beginPath();
 	context.fill();
 	context.closePath();
 context.beginPath();
-	context.moveTo(500, 100);
-	context.lineTo(500, 400);
-	context.lineTo(700, 400)
-	context.lineTo(700,100);
-	context.lineTo(500, 100)
+	context.moveTo(450, 100);
+	context.rect(475, 100, 300, 200)
 	context.lineWidth=10
 	context.strokeStyle='violet'
 	context.stroke();
@@ -33,10 +27,8 @@ context.beginPath();
 	context.closePath()
 context.beginPath();
 	context.moveTo(100, 450);
-	context.lineTo(600, 450);
-	context.lineTo(600, 600);
-	context.lineTo(100, 600);
-	context.lineTo(100, 500)
+	context.rect(100, 450, 400, 100)
+	
 	context.lineWidth=15
 	context.strokeStyle='yellow'
 	context.stroke();
