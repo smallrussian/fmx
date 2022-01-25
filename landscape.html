@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+window.onload = function() {
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
+////////////////////////////////////// start below this line ˇˇˇˇˇˇˇˇˇˇ
+
+	context.beginPath();
+	context.moveTo(0,0);
+	context.rect(0,0,800,400);
+	context.stroke();
+
+var grd = context.createLinearGradient(0,600,0,0); 
+	grd.addColorStop(0 ,'rgb(116, 167, 254)')
+	context.closePath();
+	context.beginPath();
+	context.moveTo(0,400)
+	context.rect(0,400,800,400)
+	context.strokeStyle='green'
+	context.stroke();
+	context.fillStyle='green'
+	context.fill();
+	context.closePath();
+	
+
+	
+
+
+
+
+
+
+
+
+
+////////////////////////////////////// end above this line ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆ
+
+};
+</script>
+</head>
+<body>
+<canvas id="myCanvas" width="800" height="600"></canvas>
+</body>
+</html>

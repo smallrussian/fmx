@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+window.onload = function() {
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
+////////////////////////////////////// start below this line ˇˇˇˇˇˇˇˇˇˇ
+
+/////THIS IS THE CIRCLE 
+context.beginPath();
+	context.arc(400,300,200,0*Math.PI,2*Math.PI,false);
+	context.stroke();
+	context.closePath();
+	
+	var grd = context.createLinearGradient(0,600,0,0);
+	grd.addColorStop(0, 'yellow');
+	grd.addColorStop(.25, 'orange');
+	grd.addColorStop(.5, 'red');
+	grd.addColorStop(.75,'purple');
+	grd.addColorStop(1,'blue');
+	context.rect(0,0,800,600);
+	context.fillStyle = grd;
+	context.fill();
+	context.closePath();
+	/////QUADRATIC CURVE
+//context.beginPath();
+//	context.moveTo(440,480);
+	//context.quadraticCurveTo(525,325,615,490);
+	//context.lineWidth=10;
+	//context.stroke();
+	//context.closePath();
+
+	
+/////////////bezier curve	
+//context.beginPath();
+	//context.moveTo(120,430);
+	//context.bezierCurveTo(180,170,355,500,405,380)
+	//context.lineWidth=10
+	//context.stroke();
+	//context.closePath();
+
+
+
+
+
+
+
+////////////////////////////////////// end above this line ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆ
+
+};
+	</script>
+</head>
+<body>
+<canvas id="myCanvas" width="800" height="600"></canvas>
+</body>
+</html>
