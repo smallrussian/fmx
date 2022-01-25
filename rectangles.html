@@ -7,7 +7,41 @@ var canvas = document.getElementById("myCanvas");
 var context = canvas.getContext("2d");
 
 ////////////////////////////////////// start below this line 
-
+context.beginPath();
+	context.moveTo(100,100);
+	context.lineTo(100,300);
+	context.lineTo(400,300);
+	context.lineTo(400,100);
+	context.lineTo(100, 100);
+	context.lineWidth=5
+	context.strokeStyle='blue'
+	context.stroke();
+	context.fillStyle='red'
+	context.fill();
+	context.closePath();
+context.beginPath();
+	context.moveTo(500, 100);
+	context.lineTo(500, 400);
+	context.lineTo(700, 400)
+	context.lineTo(700,100);
+	context.lineTo(500, 100)
+	context.lineWidth=10
+	context.strokeStyle='violet'
+	context.stroke();
+	context.fillStyle='green'
+	context.fill()
+	context.closePath()
+context.beginPath();
+	context.moveTo(100, 450);
+	context.lineTo(600, 450);
+	context.lineTo(600, 600);
+	context.lineTo(100, 600);
+	context.lineTo(100, 500)
+	context.lineWidth=15
+	context.strokeStyle='yellow'
+	context.stroke();
+	context.fillStyle='orange'
+	context.fill()
 
 ////////////////////////////////////// end above this line 
 };
