@@ -7,14 +7,30 @@ var canvas = document.getElementById("myCanvas");
 var context = canvas.getContext("2d");
 ////////////////////////////////////// start below this line ˇˇˇˇˇˇˇˇˇˇ
 
+	//sun(s)set sky 
 	context.beginPath();
 	context.moveTo(0,0);
 	context.rect(0,0,800,400);
 	context.stroke();
-
-var grd = context.createLinearGradient(0,600,0,0); 
-	grd.addColorStop(0 ,'rgb(116, 167, 254)')
+	var grd = context.createLinearGradient(0,600,0,0); 
+	grd.addColorStop(1 ,'rgb(116, 167, 254)')
+	grd.addColorStop(0, 'rgb(252, 113, 53)')
+	context.fillStyle=grd;
+	context.fill();
 	context.closePath();
+	
+	//sun #1
+	context.beginPath();
+	context.moveTo(100,400)
+	context.quadraticCurveTo(200,300,300,400);
+	context.lineWidth=10;
+	context.strokeStyle='rgb(235, 168, 52)'
+	context.stroke();
+	context.fillStyle='rgb(235, 168, 52)'
+	context.fill()
+	context.closePath();
+	
+	//grass rectangle
 	context.beginPath();
 	context.moveTo(0,400)
 	context.rect(0,400,800,400)
@@ -23,6 +39,124 @@ var grd = context.createLinearGradient(0,600,0,0);
 	context.fillStyle='green'
 	context.fill();
 	context.closePath();
+	
+	//sun #2
+	context.beginPath();
+	context.arc(325,300,50,0*Math.PI,2*Math.PI,false);
+	context.strokeStyle='rgb(235, 104, 52)'
+	context.stroke();
+	context.fillStyle='rgb(235, 104, 52)'
+	context.fill()
+	context.closePath();
+	
+
+	//house rectangle
+	context.beginPath()
+	context.moveTo(450,200)
+	context.rect(450, 200, 200, 200)
+	context.lineWidth=2
+	context.strokeStyle='black'
+	context.stroke()
+	context.fillStyle='red'
+	context.fill()
+	context.closePath()
+	
+	//triangle roof
+	context.beginPath()
+	context.moveTo(440,200)
+	context.lineTo(660,200)
+	context.lineTo(550, 90)
+	context.lineTo(440,200)
+	context.strokeStyle='rgb(139,69,19)'
+	context.stroke()
+	context.fillStyle='rgb(139,69,19)'
+	context.fill()
+	context.closePath()
+	
+	//window1
+	context.beginPath()
+	context.moveTo(480, 225)
+	context.rect(480,220,37,37)
+	context.strokeStyle='black'
+	context.stroke()
+	context.fillStyle='rgb(186, 244, 247)'
+	context.fill()
+	context.closePath()
+	
+	
+	//window2
+	context.beginPath()
+	context.moveTo(583, 225)
+	context.rect(583,220,37,37)
+	context.strokeStyle='black'
+	context.stroke()
+	context.fillStyle='rgb(186, 244, 247)'
+	context.fill()
+	context.closePath()
+	
+	//window3
+	context.beginPath()
+	context.moveTo(480, 225)
+	context.rect(480,325,37,37)
+	context.strokeStyle='black'
+	context.stroke()
+	context.fillStyle='rgb(186, 244, 247)'
+	context.fill()
+	context.closePath()
+	
+	//window4
+	context.beginPath()
+	context.moveTo(583, 350)
+	context.rect(583,325,37,37)
+	context.strokeStyle='black'
+	context.stroke()
+	context.fillStyle='rgb(186, 244, 247)'
+	context.fill()
+	context.closePath()
+	
+	context.beginPath()
+	context.moveTo(315,530)
+	context.rect(530,315, 40,85)
+	context.strokeStyle='gray'
+	context.stroke()
+	context.fillStyle='gray'
+	context.fill()
+	context.closePath()
+	
+	context.beginPath();
+	context.arc(563,360,5,0*Math.PI,2*Math.PI,false);
+	context.strokeStyle='brown'
+	context.stroke();
+	context.fillStyle='brown'
+	context.fill()
+	context.closePath();
+	
+	//cloud strife	
+	context.beginPath();
+	context.moveTo(50,50);
+	context.bezierCurveTo(25,-50,400,25,150,75)
+	context.quadraticCurveTo(300,150,150,200)
+	context.bezierCurveTo(-25, 300,-50, 200, 50, 50)
+	context.lineWidth=2
+	context.strokeStyle='white'
+	context.stroke();
+	context.fillStyle='white'
+	context.fill()
+	context.closePath();
+	
+	//flower
+	context.beginPath()
+	context.moveTo(730,400)
+	context.lineTo(730,350)
+	context.strokeStyle='rgb(36, 69, 17)'
+	context.stroke()
+	
+	
+
+	
+	
+	
+	
 	
 
 	
