@@ -42,7 +42,7 @@ var context = canvas.getContext("2d");
 	
 	//sun #2
 	context.beginPath();
-	context.arc(325,300,50,0*Math.PI,2*Math.PI,false);
+	context.arc(325,250,50,0*Math.PI,2*Math.PI,false);
 	context.strokeStyle='rgb(235, 104, 52)'
 	context.stroke();
 	context.fillStyle='rgb(235, 104, 52)'
@@ -114,6 +114,7 @@ var context = canvas.getContext("2d");
 	context.fill()
 	context.closePath()
 	
+	//door
 	context.beginPath()
 	context.moveTo(315,530)
 	context.rect(530,315, 40,85)
@@ -123,6 +124,7 @@ var context = canvas.getContext("2d");
 	context.fill()
 	context.closePath()
 	
+	//doorknob
 	context.beginPath();
 	context.arc(563,360,5,0*Math.PI,2*Math.PI,false);
 	context.strokeStyle='brown'
@@ -134,9 +136,12 @@ var context = canvas.getContext("2d");
 	//cloud strife	
 	context.beginPath();
 	context.moveTo(50,50);
-	context.bezierCurveTo(25,-50,400,25,150,75)
-	context.quadraticCurveTo(300,150,150,200)
-	context.bezierCurveTo(-25, 300,-50, 200, 50, 50)
+	//context.bezierCurveTo(25,-50,400,25,150,75)
+	context.quadraticCurveTo(150, -50, 150, 75)
+	context.quadraticCurveTo(300,150,150,180)
+	context.quadraticCurveTo(75, 250, 60, 150)
+	context.quadraticCurveTo(0, 150, 50, 50)
+	//context.bezierCurveTo(-25, 300,-50, 200, 50, 50)
 	context.lineWidth=2
 	context.strokeStyle='white'
 	context.stroke();
@@ -150,6 +155,53 @@ var context = canvas.getContext("2d");
 	context.lineTo(730,350)
 	context.strokeStyle='rgb(36, 69, 17)'
 	context.stroke()
+	
+
+	
+	//flower pedals
+	context.beginPath()
+	context.moveTo(730, 345)
+	context.bezierCurveTo(650,300, 750, 275, 730, 345)
+	context.bezierCurveTo(750, 275, 825, 350, 730,345)
+	context.bezierCurveTo(825, 350, 730, 410, 730,345)
+	context.bezierCurveTo(730,410, 650, 375, 730, 345)
+	context.bezierCurveTo(650,375,650,300,730,345)
+	context.strokeStyle='turquoise'
+	context.stroke()
+	context.fillStyle='turquoise'
+	context.fill()
+	context.closePath()
+
+	//flower circle
+	context.beginPath()
+	context.arc(730,345,10,0*Math.PI,2*Math.PI,false)
+	context.stroke()
+	context.strokeStyle='yellow'
+	context.fillStyle='yellow'
+	context.fill()
+	context.closePath()
+	
+	//bird1
+	context.beginPath()
+	context.moveTo(300,50)
+	context.quadraticCurveTo(325, 25, 375, 50)
+	context.quadraticCurveTo(400, 25, 450, 50)
+	context.lineWidth=10
+	context.strokeStyle='black'
+	context.stroke()
+	context.closePath()
+	
+	//bird2
+	context.beginPath()
+	context.moveTo(325,100)
+	context.quadraticCurveTo(350, 75, 400, 100)
+	context.quadraticCurveTo(425, 75, 475, 100)
+	context.lineWidth=5
+	context.strokeStyle='black'
+	context.stroke()
+	context.closePath()
+	
+	
 	
 	
 
