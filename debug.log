@@ -1,0 +1,11 @@
+[0307/153020.236:INFO:CONSOLE(1)] "marketingtech.adobe.launch.environment invalid. Falling back to "production".", source: https://www.adobe.com/marketingtech/main.min.js (1)
+[0307/153020.471:INFO:CONSOLE(19)] "🚀 container.buildInfo.environment is deprecated.Please use `container.environment.stage` instead", source: https://assets.adobedtm.com/launch-EN919758db9a654a17bac7d184b99c4820.min.js (19)
+[0307/153020.504:INFO:CONSOLE(6)] "[object Object]", source: https://workflow.licenses.adobe.com/main.js (6)
+[0307/153020.526:INFO:CONSOLE(6)] "[object Object]", source: https://workflow.licenses.adobe.com/main.js (6)
+[0307/153032.302:INFO:CONSOLE(6)] "[object Object]", source: https://workflow.licenses.adobe.com/main.js (6)
+[0307/153032.410:WARNING:spdy_session.cc(3391)] Received HEADERS for invalid stream 9
+[0307/153036.131:INFO:CONSOLE(1)] "marketingtech.adobe.launch.environment invalid. Falling back to "production".", source: https://www.adobe.com/marketingtech/main.min.js (1)
+[0307/153036.265:INFO:CONSOLE(6)] "[object Object]", source: https://workflow.licenses.adobe.com/main.js (6)
+[0307/153036.283:INFO:CONSOLE(6)] "[object Object]", source: https://workflow.licenses.adobe.com/main.js (6)
+[0307/153036.361:INFO:CONSOLE(19)] "🚀 container.buildInfo.environment is deprecated.Please use `container.environment.stage` instead", source: https://assets.adobedtm.com/launch-EN919758db9a654a17bac7d184b99c4820.min.js (19)
+[0307/153038.670:WARNING:spdy_session.cc(3391)] Received HEADERS for invalid stream 9
